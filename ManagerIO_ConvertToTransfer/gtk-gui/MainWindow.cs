@@ -60,7 +60,7 @@ public partial class MainWindow
 		// Container child table1.Gtk.Table+TableChild
 		this.label1 = new global::Gtk.Label ();
 		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Maximum days between payment and receipt:");
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Min/Maximum days between payment and receipt:");
 		this.table1.Add (this.label1);
 		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1 [this.label1]));
 		w2.XOptions = ((global::Gtk.AttachOptions)(4));

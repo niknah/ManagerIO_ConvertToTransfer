@@ -70,7 +70,7 @@
         <child>
           <widget class="Gtk.Label" id="label1">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Maximum days between payment and receipt:</property>
+            <property name="LabelProp" translatable="yes">Min/Maximum days between payment and receipt:</property>
           </widget>
           <packing>
             <property name="AutoSize">True</property>
