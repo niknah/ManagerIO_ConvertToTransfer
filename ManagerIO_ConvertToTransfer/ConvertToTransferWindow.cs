@@ -4,39 +4,16 @@ using Gtk;
 using ManagerIO_ConvertToTransfer;
 using Manager;
 
-public partial class MainWindow: Gtk.Window
+public partial class ConvertToTransferWindow: Gtk.Window
 {
-	string filename;
-	PersistentObjects objects;
+	ManagerFile managerFile;
 
-	public MainWindow () : base (Gtk.WindowType.Toplevel)
+	public ConvertToTransferWindow (String filename) : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		this.filename=SelectFile ();
-		//this.filename = "/tmp/test.manager";
-		if(this.filename!=null)
-			this.objects = new PersistentObjects(this.filename);
-
+		managerFile = new ManagerFile (filename);
 	}
 
-	public string SelectFile() {
-		Gtk.FileChooserDialog fc=
-			new Gtk.FileChooserDialog("Choose the file to open",
-				this,
-				FileChooserAction.Open,
-				"Cancel",ResponseType.Cancel,
-				"Open",ResponseType.Accept);
-		try {
-
-			if (fc.Run() != (int)ResponseType.Accept) 
-			{
-				return null;
-			}
-			return fc.Filename;
-		} finally {
-			fc.Destroy ();
-		}
-	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
@@ -75,7 +52,7 @@ public partial class MainWindow: Gtk.Window
 		FindTransfers findTransfers=new FindTransfers ();
 		findTransfers.SetExchangeRange(Convert.ToDecimal(minExchangeRate.Text),Convert.ToDecimal(maxExchangeRate.Text));
 		findTransfers.SetDaysRange (Convert.ToInt32 (minDays.Text),Convert.ToInt32 (maxDays.Text));
-		List<FindTransfers.FoundTransfer> foundTransfers=findTransfers.Search (this.objects);
+		List<FindTransfers.FoundTransfer> foundTransfers=findTransfers.Search (managerFile.GetObjects());
 		FillSearchResults (foundTransfers);
 	}
 
@@ -84,7 +61,7 @@ public partial class MainWindow: Gtk.Window
 		resultsTable.Resize ((uint)foundTransfers.Count+1,3);
 		uint row = 1;
 		foreach (FindTransfers.FoundTransfer foundTransfer in foundTransfers) {
-			string paymentStr=FindTransfers.FoundTransfer.PaymentToString (objects, foundTransfer.payment);
+			string paymentStr = managerFile.GuidToText (foundTransfer.payment.Key);
 			CheckButton checkButton=new CheckButton ();
 			resultsTable.Attach (checkButton, 1, 2,row,row+1);
 
@@ -95,7 +72,7 @@ public partial class MainWindow: Gtk.Window
 			label.Justify = Justification.Left;
 			align.Add (label);
 			resultsTable.Attach (align, 0, 1,row,row+1,AttachOptions.Fill,AttachOptions.Fill,0,0);
-			List<string> receiptsStr=foundTransfer.ReceiptsToStrings (objects);
+			List<string> receiptsStr=foundTransfer.ReceiptsToStrings (managerFile);
 			ResultRow resultRow=new ResultRow() { 
 				okButton=checkButton,  foundTransfer=foundTransfer,
 				fromAlign=align
@@ -128,7 +105,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnSaveButtonClicked (object sender, EventArgs e)
 	{
-		ConvertToTransfer convertToTransfer= new ConvertToTransfer (objects);
+		ConvertToTransfer convertToTransfer= new ConvertToTransfer (managerFile.GetObjects());
 		foreach (ResultRow resultRow in resultRows) {
 			if (!resultRow.okButton.Active)
 				continue;
@@ -147,7 +124,7 @@ public partial class MainWindow: Gtk.Window
 //Console.WriteLine(resultRow.foundTransfer.receipts.Count+", selected:"+selected);
 		}
 
-		convertToTransfer.BackupFile (this.filename);
+		managerFile.BackupFile ();
 		convertToTransfer.ConvertAll ();
 		MessageBox ("Converted:" + convertToTransfer.Count ());
 		SearchAndDisplay ();

@@ -86,13 +86,6 @@ namespace ManagerIO_ConvertToTransfer
 			return transferItems.Count;
 		}
 
-		public void BackupFile(string filename) {
-			string backupFilename=Path.Combine(
-				Path.GetDirectoryName(filename),
-				Path.GetFileNameWithoutExtension (filename)+
-				string.Format("_{0:yyyy-MM-dd-HHmmss}_backup.manager",DateTime.Now));
-			File.Copy (filename, backupFilename);
-		}
 	}
 }
 

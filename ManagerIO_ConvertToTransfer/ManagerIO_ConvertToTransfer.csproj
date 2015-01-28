@@ -67,12 +67,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
-    <Compile Include="MainWindow.cs" />
-    <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FindTransfers.cs" />
     <Compile Include="ConvertToTransfer.cs" />
+    <Compile Include="ConvertToTransferWindow.cs" />
+    <Compile Include="gtk-gui\ConvertToTransferWindow.cs" />
+    <Compile Include="MainDialog.cs" />
+    <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.MainDialog.cs" />
+    <Compile Include="ManagerFile.cs" />
+    <Compile Include="SearchTransactions.cs" />
+    <Compile Include="SearchTransactionsWindow.cs" />
+    <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.SearchTransactionsWindow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

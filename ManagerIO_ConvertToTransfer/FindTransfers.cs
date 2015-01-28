@@ -16,13 +16,14 @@ namespace ManagerIO_ConvertToTransfer
 				this.payment=payment;
 				receipts=new List<Receipt>();
 			}
-			public List<string> ReceiptsToStrings(PersistentObjects objects) {
+			public List<string> ReceiptsToStrings(ManagerFile managerFile) {
 				List<string> strings = new List<string> ();
 				foreach (Receipt receipt in receipts) {
-					strings.Add (FoundTransfer.ReceiptToString (objects,receipt));
+					strings.Add (managerFile.GuidToText(receipt.Key));
 				}
 				return strings;
 			}
+			/*
 			static public string PaymentToString(PersistentObjects objects,Payment payment) {
 				Guid account = (Guid) payment.CreditAccount;
 				return string.Format ("{0:yyyy-MM-dd} {1:C} {3}\n{2}\n{4}", 
@@ -35,6 +36,7 @@ namespace ManagerIO_ConvertToTransfer
 					receipt.Date, receipt.Lines[0].Amount,receipt.Description, 
 					((BankAccount)objects[account]).Name,receipt.Key);
 			}
+			*/
 		}
 
 		decimal minExchangeRate=1,maxExchangeRate=1;
