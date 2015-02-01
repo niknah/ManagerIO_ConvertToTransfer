@@ -2,10 +2,10 @@
 
 namespace ManagerIO_ConvertToTransfer
 {
-	public partial class MainDialog : Gtk.Dialog
+	public partial class MainDialog : Gtk.Window
 	{
 		string filename;
-		public MainDialog ()
+		public MainDialog (): base (Gtk.WindowType.Toplevel)
 		{
 			this.Build ();
 			this.filename=ManagerFile.SelectFile (this);

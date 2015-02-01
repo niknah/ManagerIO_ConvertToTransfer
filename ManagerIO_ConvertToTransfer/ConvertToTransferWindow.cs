@@ -8,10 +8,10 @@ public partial class ConvertToTransferWindow: Gtk.Window
 {
 	ManagerFile managerFile;
 
-	public ConvertToTransferWindow (String filename) : base (Gtk.WindowType.Toplevel)
+	public ConvertToTransferWindow (ManagerFile managerFile) : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		managerFile = new ManagerFile (filename);
+		this.managerFile = managerFile;
 	}
 
 

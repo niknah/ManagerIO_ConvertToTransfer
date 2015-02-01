@@ -73,12 +73,18 @@
     <Compile Include="ConvertToTransfer.cs" />
     <Compile Include="ConvertToTransferWindow.cs" />
     <Compile Include="gtk-gui\ConvertToTransferWindow.cs" />
-    <Compile Include="MainDialog.cs" />
-    <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.MainDialog.cs" />
     <Compile Include="ManagerFile.cs" />
     <Compile Include="SearchTransactions.cs" />
     <Compile Include="SearchTransactionsWindow.cs" />
     <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.SearchTransactionsWindow.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.MainWindow.cs" />
+    <Compile Include="BankAccountWidget.cs" />
+    <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.BankAccountWidget.cs" />
+    <Compile Include="CsvExport.cs" />
+    <Compile Include="BankAccountUtilsWindow.cs" />
+    <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.BankAccountUtilsWindow.cs" />
+    <Compile Include="ExportManagerFile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

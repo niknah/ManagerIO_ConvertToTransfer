@@ -14,7 +14,7 @@ namespace ManagerIO_ConvertToTransfer
 		{
 			Application.Init ();
 
-			MainDialog mainDialog=new MainDialog ();
+			MainWindow mainDialog=new MainWindow ();
 			//mainDialog.Close += new EventHandler (quit);
 			mainDialog.Destroyed += new EventHandler (quit);
 			mainDialog.Show ();

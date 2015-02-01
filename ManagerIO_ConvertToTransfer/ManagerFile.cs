@@ -43,6 +43,17 @@ namespace ManagerIO_ConvertToTransfer
 			return o.GetType ().Name;
 		}
 
+		public string GetAccountName(Guid? id) {
+			if (id == null)
+				return "";
+			object o = GetObject ((Guid)id);
+			if(o.GetType()==typeof(CashAccount)) {
+				return ((CashAccount)o).Name;
+			} else if(o.GetType()==typeof(BankAccount)) {
+				return ((BankAccount)o).Name;
+			}
+			return "";
+		}
 
 		static public string SelectFile(Window parent) {
 			Gtk.FileChooserDialog fc=
@@ -63,11 +74,22 @@ namespace ManagerIO_ConvertToTransfer
 			}
 		}
 
+		public void ClearReconciliation (Guid? bankAccountGuid)
+		{
+			foreach (AccountReconciliationBalance reconcile in GetObjects().Values.OfType<AccountReconciliationBalance>()) {
+				if (bankAccountGuid!=null && reconcile.Account != bankAccountGuid) {
+					continue;
+				}
+				GetObjects().Remove (reconcile.Key);
+			}
+		}
+
 		public void BackupFile() {
+			DateTime lastWriteTime=(new FileInfo (filename)).LastWriteTime;
 			string backupFilename=Path.Combine(
 				Path.GetDirectoryName(filename),
 				Path.GetFileNameWithoutExtension (filename)+
-				string.Format("_{0:yyyy-MM-dd-HHmmss}_backup.manager",DateTime.Now));
+				string.Format("_{0:yyyy-MM-dd-HHmmss}_backup.manager",lastWriteTime));
 			File.Copy (filename, backupFilename);
 		}
 	}
