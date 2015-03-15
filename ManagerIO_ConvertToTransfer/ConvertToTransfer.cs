@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using ManagerIO_ConvertToTransfer;
 using Manager;
 using Manager.Model;
+using Manager.Persistence;
 
 namespace ManagerIO_ConvertToTransfer
 {
@@ -48,12 +49,14 @@ namespace ManagerIO_ConvertToTransfer
 				Key = Guid.NewGuid(),
 				CreditAccount=payment.CreditAccount,
 				DebitAccount=receipt.DebitAccount,
-				Amount=receiptAmount,
+				CreditAmount = paymentAmount,
+				DebitAmount=receiptAmount,
 				Date=receipt.Date,
 				Description=receipt.Description+" "+payment.Description+ " (Converted)",
 				Reference=receipt.Reference+ " "+payment.Reference
 			};
 			objects.Put (transfer);
+			/*
 			if (paymentAmount != receiptAmount) {
 				decimal exchangeRate =  paymentAmount/receiptAmount;
 				TransactionExchangeRate exchange=new TransactionExchangeRate () {
@@ -65,6 +68,7 @@ namespace ManagerIO_ConvertToTransfer
 
 				objects.Put(exchange);
 			}
+			*/
 		}
 
 		public bool Add(FindTransfers.FoundTransfer foundTransfer,int nthReceipt) {

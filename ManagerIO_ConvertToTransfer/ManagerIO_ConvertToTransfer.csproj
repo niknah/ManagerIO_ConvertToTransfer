@@ -8,6 +8,8 @@
     <RootNamespace>ManagerIO_ConvertToTransfer</RootNamespace>
     <AssemblyName>ManagerIO_ConvertToTransfer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,7 +59,10 @@
     </Reference>
     <Reference Include="Mono.Posix" />
     <Reference Include="Manager">
-      <HintPath>..\..\..\..\..\opt\manager-accounting\Manager.dll</HintPath>
+      <HintPath>Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>protobuf-net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +90,7 @@
     <Compile Include="BankAccountUtilsWindow.cs" />
     <Compile Include="gtk-gui\ManagerIO_ConvertToTransfer.BankAccountUtilsWindow.cs" />
     <Compile Include="ExportManagerFile.cs" />
+    <Compile Include="PersistentObjects.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

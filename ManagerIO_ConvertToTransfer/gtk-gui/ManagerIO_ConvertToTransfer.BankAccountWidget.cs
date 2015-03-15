@@ -5,7 +5,6 @@ namespace ManagerIO_ConvertToTransfer
 	public partial class BankAccountWidget
 	{
 		private global::Gtk.Alignment alignment1;
-		
 		private global::Gtk.ComboBox comboBox;
 
 		protected virtual void Build ()
