@@ -120,6 +120,11 @@ namespace ManagerIO_ConvertToTransfer
 				if (found.receipts.Count > 0)
 					founds.Add (found);
 			}
+			founds.Sort(delegate(FoundTransfer a,FoundTransfer b) {
+				if(a.payment.Date>b.payment.Date) return 1;
+				else if(a.payment.Date<b.payment.Date) return -1;
+				return 0;
+			});
 			return founds;
 		}
 	}

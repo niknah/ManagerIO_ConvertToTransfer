@@ -5,19 +5,33 @@ namespace ManagerIO_ConvertToTransfer
 	public partial class SearchTransactionsWindow
 	{
 		private global::Gtk.VBox vbox2;
+		
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+		
 		private global::Gtk.TreeView transactionsTreeView;
+		
 		private global::Gtk.Table table3;
+		
 		private global::ManagerIO_ConvertToTransfer.BankAccountWidget bankAccountCombo;
+		
 		private global::Gtk.Button deleteButton;
+		
 		private global::Gtk.Entry descriptionLabel;
+		
 		private global::Gtk.Button findButton;
+		
 		private global::Gtk.HBox hbox1;
+		
 		private global::Gtk.Entry startDate;
+		
 		private global::Gtk.Entry endDate;
+		
 		private global::Gtk.Label label1;
+		
 		private global::Gtk.Label label2;
+		
 		private global::Gtk.Label label3;
+		
 		private global::Gtk.Button selectAllButton;
 
 		protected virtual void Build ()
@@ -49,7 +63,9 @@ namespace ManagerIO_ConvertToTransfer
 			this.table3.RowSpacing = ((uint)(6));
 			this.table3.ColumnSpacing = ((uint)(6));
 			// Container child table3.Gtk.Table+TableChild
-			this.bankAccountCombo = null;
+			this.bankAccountCombo = new global::ManagerIO_ConvertToTransfer.BankAccountWidget ();
+			this.bankAccountCombo.Events = ((global::Gdk.EventMask)(256));
+			this.bankAccountCombo.Name = "bankAccountCombo";
 			this.table3.Add (this.bankAccountCombo);
 			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table3 [this.bankAccountCombo]));
 			w3.LeftAttach = ((uint)(1));

@@ -615,7 +615,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ManagerIO_ConvertToTransfer.MainWindow" design-size="221 150">
+  <widget class="Gtk.Window" id="ManagerIO_ConvertToTransfer.MainWindow" design-size="235 150">
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>

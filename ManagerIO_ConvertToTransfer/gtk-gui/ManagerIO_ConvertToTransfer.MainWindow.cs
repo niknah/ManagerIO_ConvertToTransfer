@@ -70,7 +70,7 @@ namespace ManagerIO_ConvertToTransfer
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 221;
+			this.DefaultWidth = 235;
 			this.DefaultHeight = 150;
 			this.Show ();
 			this.convertTransfers.Clicked += new global::System.EventHandler (this.OnConvertTransfersClicked);

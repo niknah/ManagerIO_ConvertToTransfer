@@ -91,7 +91,8 @@ namespace ManagerIO_ConvertToTransfer
 				Path.GetDirectoryName(filename),
 				Path.GetFileNameWithoutExtension (filename)+
 				string.Format("_{0:yyyy-MM-dd-HHmmss}_backup.manager",lastWriteTime));
-			File.Copy (filename, backupFilename);
+			if(!File.Exists(backupFilename))
+				File.Copy (filename, backupFilename);
 		}
 	}
 }

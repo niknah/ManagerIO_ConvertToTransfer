@@ -22,7 +22,9 @@ namespace ManagerIO_ConvertToTransfer
 			this.table1.RowSpacing = ((uint)(6));
 			this.table1.ColumnSpacing = ((uint)(6));
 			// Container child table1.Gtk.Table+TableChild
-			this.bankAccountCombo = null;
+			this.bankAccountCombo = new global::ManagerIO_ConvertToTransfer.BankAccountWidget ();
+			this.bankAccountCombo.Events = ((global::Gdk.EventMask)(256));
+			this.bankAccountCombo.Name = "bankAccountCombo";
 			this.table1.Add (this.bankAccountCombo);
 			global::Gtk.Table.TableChild w1 = ((global::Gtk.Table.TableChild)(this.table1 [this.bankAccountCombo]));
 			w1.XOptions = ((global::Gtk.AttachOptions)(4));
