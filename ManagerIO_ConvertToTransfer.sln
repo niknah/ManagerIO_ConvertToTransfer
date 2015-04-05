@@ -15,6 +15,6 @@ Global
 		{8D0125DF-BF17-4601-9D1E-D99B8E345765}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ManagerIO_ConvertToTransfer\ManagerIO_ConvertToTransfer.csproj
+		version = 1.0.3
 	EndGlobalSection
 EndGlobal
