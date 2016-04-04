@@ -40,6 +40,10 @@ namespace ManagerIO_ConvertToTransfer
 				return this.objectDictionary[key];
 			}
 		}
+		public bool ContainsKey(Guid key) {
+			return this.objectDictionary.ContainsKey (key);
+		}
+
 		//
 		// Constructors
 		//

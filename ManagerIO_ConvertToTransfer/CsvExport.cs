@@ -106,8 +106,11 @@ namespace ManagerIO_ConvertToTransfer
 			// The rows
 			foreach (Dictionary<string, object> row in rows)
 			{
-				foreach (string field in fields)
-					sb.Append(MakeValueCsvFriendly(row[field])).Append(",");
+				foreach (string field in fields) {
+					if (!row.ContainsKey (field))
+						continue;
+					sb.Append (MakeValueCsvFriendly (row [field])).Append (",");
+				}
 				sb.AppendLine();
 			}
 

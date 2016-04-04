@@ -2,6 +2,7 @@
 using Manager;
 using Manager.Model;
 using System.Linq;
+using System.Reflection;
 
 namespace ManagerIO_ConvertToTransfer
 {
@@ -13,6 +14,30 @@ namespace ManagerIO_ConvertToTransfer
 			this.managerFile = managerFile;
 		}
 
+		public string GetAccountName(Guid guid) {
+			if (!managerFile.ContainsKey (guid)) {
+				// look up chart of accounts
+
+				FieldInfo[] fieldInfos=typeof(ChartOfAccounts).GetFields (System.Reflection.BindingFlags.Static|BindingFlags.Public);
+				foreach(FieldInfo fieldInfo in fieldInfos) {
+					object guidChart = fieldInfo.GetValue (null);
+					if (guidChart.GetType () == typeof(Guid)) {
+						if( ((Guid)guidChart) == guid) {
+							return fieldInfo.Name;
+						}
+					}
+				}
+			}
+			object account = managerFile.GetObject (guid);
+			if (account.GetType () == typeof(ProfitAndLossStatementAccount)) {
+				return ((ProfitAndLossStatementAccount)account).Name;
+			} else if (account.GetType () == typeof(BalanceSheetAccount)) {
+				return ((BalanceSheetAccount)account).Name;
+			} else if (account.GetType () == typeof(CashAccount)) {
+				return ((CashAccount)account).Name;
+			}
+			return "Unknown";
+		}
 		public void ExportToCsv(Guid? bankAccountGuid,string filename) {
 			var csvExport=new CsvExport();
 			foreach (Manager.Model.Object transaction in managerFile.GetObjects().Values) {
@@ -47,7 +72,8 @@ namespace ManagerIO_ConvertToTransfer
 							}
 						}
 						if (line.Account != null) {
-							account=((GeneralLedgerAccount)managerFile.GetObject ((Guid)line.Account)).Name;
+							account= GetAccountName((Guid)line.Account);
+//							account=((ProfitAndLossStatementAccount)managerFile.GetObject ((Guid)line.Account)).Name;
 						}
 						csvExport ["Tax" + lineUpto]=taxCode;
 						csvExport ["Account" + lineUpto]=account;
@@ -84,7 +110,8 @@ namespace ManagerIO_ConvertToTransfer
 							}
 						}
 						if (line.Account != null) {
-							account = ((GeneralLedgerAccount)managerFile.GetObject ((Guid)line.Account)).Name;
+							account = GetAccountName((Guid)line.Account);
+//							account = ((ProfitAndLossStatementAccount)managerFile.GetObject ((Guid)line.Account)).Name;
 						}
 						csvExport ["Tax" + lineUpto] = taxCode;
 						csvExport ["Account" + lineUpto] = account;

@@ -26,6 +26,9 @@ namespace ManagerIO_ConvertToTransfer
 		public object GetObject(Guid guid) {
 			return objects [guid];
 		}
+		public bool ContainsKey(Guid guid) {
+			return objects.ContainsKey (guid);
+		}
 
 		public string GuidToText(Guid id) {
 			object o=GetObject(id);
