@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using ManagerIO_ConvertToTransfer;
 using Manager;
 using Manager.Model;
+using Manager.Model.Enums;
 using Manager.Persistence;
 
 namespace ManagerIO_ConvertToTransfer
@@ -50,8 +51,12 @@ namespace ManagerIO_ConvertToTransfer
 				CreditAccount=payment.CreditAccount,
 				DebitAccount=receipt.DebitAccount,
 				CreditAmount = paymentAmount,
+				CreditClearDate = payment.Date,
+				DebitClearDate = receipt.Date,
 				DebitAmount=receiptAmount,
 				Date=receipt.Date,
+				DebitClearStatus=BankClearStatus.Cleared,
+				CreditClearStatus=BankClearStatus.Cleared,
 				Description=receipt.Description+" "+payment.Description+ " (Converted)",
 				Reference=receipt.Reference+ " "+payment.Reference
 			};
