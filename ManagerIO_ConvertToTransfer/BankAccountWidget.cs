@@ -23,7 +23,7 @@ namespace ManagerIO_ConvertToTransfer
 			bankAccounts = new List<Guid?> ();
 			bankAccounts.Add(null);
 			comboBox.AppendText ("All Accounts");
-			foreach (BankAccount bankAccount in objects.Values.OfType<BankAccount>()) {
+			foreach (CashAccount2 bankAccount in objects.Values.OfType<CashAccount2>()) {
 				bankAccounts.Add(bankAccount.Key);
 				comboBox.AppendText (bankAccount.Name);
 			}

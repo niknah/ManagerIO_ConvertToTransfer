@@ -1,164 +1,156 @@
 ﻿<Properties StartupItem="ManagerIO_ConvertToTransfer/ManagerIO_ConvertToTransfer.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ManagerIO_ConvertToTransfer/ExportManagerFile.cs">
-    <Files>
-      <File FileName="ManagerIO_ConvertToTransfer/ExportManagerFile.cs" Line="19" Column="8" />
-      <File FileName="ManagerIO_ConvertToTransfer/ConvertToTransfer.cs" Line="1" Column="1" />
-      <File FileName="ManagerIO_ConvertToTransfer/PersistentObjects.cs" Line="1" Column="1" />
-      <File FileName="ManagerIO_ConvertToTransfer/ManagerFile.cs" Line="1" Column="1" />
-      <File FileName="ManagerIO_ConvertToTransfer/MainWindow.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Catchpoint exceptionName="BCrypt.Net.SaltParseException" />
-      <Catchpoint exceptionName="Glade.HandlerNotFoundException" />
-      <Catchpoint exceptionName="GLib.GException" />
-      <Catchpoint exceptionName="GLib.MissingIntPtrCtorException" />
-      <Catchpoint exceptionName="Manager.Persistence.FileCorruptedException" />
-      <Catchpoint exceptionName="Manager.Persistence.FileInvalidException" />
-      <Catchpoint exceptionName="Manager.SerializationException" />
-      <Catchpoint exceptionName="Mono.Unix.UnixIOException" />
-      <Catchpoint exceptionName="Mono.Xml.SmallXmlParserException" />
-      <Catchpoint exceptionName="ProtoBuf.ProtoException" />
-      <Catchpoint exceptionName="System.AccessViolationException" />
-      <Catchpoint exceptionName="System.AggregateException" />
-      <Catchpoint exceptionName="System.AppDomainUnloadedException" />
-      <Catchpoint exceptionName="System.ApplicationException" />
-      <Catchpoint exceptionName="System.ArgumentException" />
-      <Catchpoint exceptionName="System.ArgumentNullException" />
-      <Catchpoint exceptionName="System.ArgumentOutOfRangeException" />
-      <Catchpoint exceptionName="System.ArithmeticException" />
-      <Catchpoint exceptionName="System.ArrayTypeMismatchException" />
-      <Catchpoint exceptionName="System.BadImageFormatException" />
-      <Catchpoint exceptionName="System.CannotUnloadAppDomainException" />
-      <Catchpoint exceptionName="System.Collections.Generic.KeyNotFoundException" />
-      <Catchpoint exceptionName="System.ComponentModel.Design.CheckoutException" />
-      <Catchpoint exceptionName="System.ComponentModel.InvalidAsynchronousStateException" />
-      <Catchpoint exceptionName="System.ComponentModel.InvalidEnumArgumentException" />
-      <Catchpoint exceptionName="System.ComponentModel.LicenseException" />
-      <Catchpoint exceptionName="System.ComponentModel.WarningException" />
-      <Catchpoint exceptionName="System.ComponentModel.Win32Exception" />
-      <Catchpoint exceptionName="System.Configuration.ConfigurationException" />
-      <Catchpoint exceptionName="System.Configuration.SettingsPropertyIsReadOnlyException" />
-      <Catchpoint exceptionName="System.Configuration.SettingsPropertyNotFoundException" />
-      <Catchpoint exceptionName="System.Configuration.SettingsPropertyWrongTypeException" />
-      <Catchpoint exceptionName="System.ContextMarshalException" />
-      <Catchpoint exceptionName="System.DataMisalignedException" />
-      <Catchpoint exceptionName="System.Diagnostics.Contracts.ContractException" />
-      <Catchpoint exceptionName="System.Diagnostics.Contracts.ContractShouldAssertException" />
-      <Catchpoint exceptionName="System.DivideByZeroException" />
-      <Catchpoint exceptionName="System.DllNotFoundException" />
-      <Catchpoint exceptionName="System.DuplicateWaitObjectException" />
-      <Catchpoint exceptionName="System.EntryPointNotFoundException" />
-      <Catchpoint exceptionName="System.Exception" />
-      <Catchpoint exceptionName="System.ExecutionEngineException" />
-      <Catchpoint exceptionName="System.FieldAccessException" />
-      <Catchpoint exceptionName="System.FormatException" />
-      <Catchpoint exceptionName="System.Globalization.CultureNotFoundException" />
-      <Catchpoint exceptionName="System.IndexOutOfRangeException" />
-      <Catchpoint exceptionName="System.InsufficientExecutionStackException" />
-      <Catchpoint exceptionName="System.InsufficientMemoryException" />
-      <Catchpoint exceptionName="System.InvalidCastException" />
-      <Catchpoint exceptionName="System.InvalidOperationException" />
-      <Catchpoint exceptionName="System.InvalidProgramException" />
-      <Catchpoint exceptionName="System.InvalidTimeZoneException" />
-      <Catchpoint exceptionName="System.IO.DirectoryNotFoundException" />
-      <Catchpoint exceptionName="System.IO.DriveNotFoundException" />
-      <Catchpoint exceptionName="System.IO.EndOfStreamException" />
-      <Catchpoint exceptionName="System.IO.FileLoadException" />
-      <Catchpoint exceptionName="System.IO.FileNotFoundException" />
-      <Catchpoint exceptionName="System.IO.InternalBufferOverflowException" />
-      <Catchpoint exceptionName="System.IO.InvalidDataException" />
-      <Catchpoint exceptionName="System.IO.IOException" />
-      <Catchpoint exceptionName="System.IO.IsolatedStorage.IsolatedStorageException" />
-      <Catchpoint exceptionName="System.IO.PathTooLongException" />
-      <Catchpoint exceptionName="System.MemberAccessException" />
-      <Catchpoint exceptionName="System.MethodAccessException" />
-      <Catchpoint exceptionName="System.MissingFieldException" />
-      <Catchpoint exceptionName="System.MissingMemberException" />
-      <Catchpoint exceptionName="System.MissingMethodException" />
-      <Catchpoint exceptionName="System.MulticastNotSupportedException" />
-      <Catchpoint exceptionName="System.Net.CookieException" />
-      <Catchpoint exceptionName="System.Net.HttpListenerException" />
-      <Catchpoint exceptionName="System.Net.Mail.SmtpClient+CancellationException" />
-      <Catchpoint exceptionName="System.Net.Mail.SmtpException" />
-      <Catchpoint exceptionName="System.Net.Mail.SmtpFailedRecipientException" />
-      <Catchpoint exceptionName="System.Net.Mail.SmtpFailedRecipientsException" />
-      <Catchpoint exceptionName="System.Net.NetworkInformation.NetworkInformationException" />
-      <Catchpoint exceptionName="System.Net.NetworkInformation.PingException" />
-      <Catchpoint exceptionName="System.Net.ProtocolViolationException" />
-      <Catchpoint exceptionName="System.Net.Sockets.SocketException" />
-      <Catchpoint exceptionName="System.Net.WebException" />
-      <Catchpoint exceptionName="System.Net.WebSockets.WebSocketException" />
-      <Catchpoint exceptionName="System.NotFiniteNumberException" />
-      <Catchpoint exceptionName="System.NotImplementedException" />
-      <Catchpoint exceptionName="System.NotSupportedException" />
-      <Catchpoint exceptionName="System.NullReferenceException" />
-      <Catchpoint exceptionName="System.ObjectDisposedException" />
-      <Catchpoint exceptionName="System.OperationCanceledException" />
-      <Catchpoint exceptionName="System.OutOfMemoryException" />
-      <Catchpoint exceptionName="System.OverflowException" />
-      <Catchpoint exceptionName="System.PlatformNotSupportedException" />
-      <Catchpoint exceptionName="System.RankException" />
-      <Catchpoint exceptionName="System.Reflection.AmbiguousMatchException" />
-      <Catchpoint exceptionName="System.Reflection.CustomAttributeFormatException" />
-      <Catchpoint exceptionName="System.Reflection.InvalidFilterCriteriaException" />
-      <Catchpoint exceptionName="System.Reflection.ReflectionTypeLoadException" />
-      <Catchpoint exceptionName="System.Reflection.TargetException" />
-      <Catchpoint exceptionName="System.Reflection.TargetInvocationException" />
-      <Catchpoint exceptionName="System.Reflection.TargetParameterCountException" />
-      <Catchpoint exceptionName="System.Resources.MissingManifestResourceException" />
-      <Catchpoint exceptionName="System.Resources.MissingSatelliteAssemblyException" />
-      <Catchpoint exceptionName="System.Runtime.CompilerServices.RuntimeWrappedException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.COMException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.ExternalException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.InvalidComObjectException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.InvalidOleVariantTypeException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.MarshalDirectiveException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.SafeArrayRankMismatchException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.SafeArrayTypeMismatchException" />
-      <Catchpoint exceptionName="System.Runtime.InteropServices.SEHException" />
-      <Catchpoint exceptionName="System.Runtime.Remoting.RemotingException" />
-      <Catchpoint exceptionName="System.Runtime.Remoting.RemotingTimeoutException" />
-      <Catchpoint exceptionName="System.Runtime.Remoting.ServerException" />
-      <Catchpoint exceptionName="System.Runtime.Serialization.SerializationException" />
-      <Catchpoint exceptionName="System.Security.AccessControl.PrivilegeNotHeldException" />
-      <Catchpoint exceptionName="System.Security.Authentication.AuthenticationException" />
-      <Catchpoint exceptionName="System.Security.Authentication.InvalidCredentialException" />
-      <Catchpoint exceptionName="System.Security.Cryptography.CryptographicException" />
-      <Catchpoint exceptionName="System.Security.Cryptography.CryptographicUnexpectedOperationException" />
-      <Catchpoint exceptionName="System.Security.HostProtectionException" />
-      <Catchpoint exceptionName="System.Security.Policy.PolicyException" />
-      <Catchpoint exceptionName="System.Security.Principal.IdentityNotMappedException" />
-      <Catchpoint exceptionName="System.Security.SecurityException" />
-      <Catchpoint exceptionName="System.Security.VerificationException" />
-      <Catchpoint exceptionName="System.Security.XmlSyntaxException" />
-      <Catchpoint exceptionName="System.StackOverflowException" />
-      <Catchpoint exceptionName="System.SystemException" />
-      <Catchpoint exceptionName="System.Text.DecoderFallbackException" />
-      <Catchpoint exceptionName="System.Text.EncoderFallbackException" />
-      <Catchpoint exceptionName="System.Text.RegularExpressions.RegexMatchTimeoutException" />
-      <Catchpoint exceptionName="System.Threading.AbandonedMutexException" />
-      <Catchpoint exceptionName="System.Threading.BarrierPostPhaseException" />
-      <Catchpoint exceptionName="System.Threading.LockRecursionException" />
-      <Catchpoint exceptionName="System.Threading.SemaphoreFullException" />
-      <Catchpoint exceptionName="System.Threading.SynchronizationLockException" />
-      <Catchpoint exceptionName="System.Threading.Tasks.TaskCanceledException" />
-      <Catchpoint exceptionName="System.Threading.Tasks.TaskSchedulerException" />
-      <Catchpoint exceptionName="System.Threading.ThreadAbortException" />
-      <Catchpoint exceptionName="System.Threading.ThreadInterruptedException" />
-      <Catchpoint exceptionName="System.Threading.ThreadStartException" />
-      <Catchpoint exceptionName="System.Threading.ThreadStateException" />
-      <Catchpoint exceptionName="System.Threading.WaitHandleCannotBeOpenedException" />
-      <Catchpoint exceptionName="System.TimeoutException" />
-      <Catchpoint exceptionName="System.TimeZoneNotFoundException" />
-      <Catchpoint exceptionName="System.TypeAccessException" />
-      <Catchpoint exceptionName="System.TypeInitializationException" />
-      <Catchpoint exceptionName="System.TypeLoadException" />
-      <Catchpoint exceptionName="System.TypeUnloadedException" />
-      <Catchpoint exceptionName="System.UnauthorizedAccessException" />
-      <Catchpoint exceptionName="System.UriFormatException" />
+      <Catchpoint exceptionName="BCrypt.Net.SaltParseException" includeSubclasses="True" />
+      <Catchpoint exceptionName="Glade.HandlerNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="GLib.GException" includeSubclasses="True" />
+      <Catchpoint exceptionName="GLib.MissingIntPtrCtorException" includeSubclasses="True" />
+      <Catchpoint exceptionName="Manager.Persistence.FileCorruptedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="Manager.Persistence.FileInvalidException" includeSubclasses="True" />
+      <Catchpoint exceptionName="Manager.SerializationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="Mono.Unix.UnixIOException" includeSubclasses="True" />
+      <Catchpoint exceptionName="Mono.Xml.SmallXmlParserException" includeSubclasses="True" />
+      <Catchpoint exceptionName="ProtoBuf.ProtoException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.AccessViolationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.AggregateException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.AppDomainUnloadedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ApplicationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ArgumentException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ArgumentNullException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ArgumentOutOfRangeException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ArithmeticException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ArrayTypeMismatchException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.BadImageFormatException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.CannotUnloadAppDomainException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Collections.Generic.KeyNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ComponentModel.Design.CheckoutException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ComponentModel.InvalidAsynchronousStateException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ComponentModel.InvalidEnumArgumentException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ComponentModel.LicenseException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ComponentModel.WarningException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ComponentModel.Win32Exception" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Configuration.ConfigurationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Configuration.SettingsPropertyIsReadOnlyException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Configuration.SettingsPropertyNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Configuration.SettingsPropertyWrongTypeException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ContextMarshalException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.DataMisalignedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Diagnostics.Contracts.ContractException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Diagnostics.Contracts.ContractShouldAssertException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.DivideByZeroException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.DllNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.DuplicateWaitObjectException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.EntryPointNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ExecutionEngineException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.FieldAccessException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.FormatException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Globalization.CultureNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IndexOutOfRangeException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.InsufficientExecutionStackException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.InsufficientMemoryException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.InvalidCastException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.InvalidOperationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.InvalidProgramException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.InvalidTimeZoneException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.DirectoryNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.DriveNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.EndOfStreamException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.FileLoadException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.FileNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.InternalBufferOverflowException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.InvalidDataException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.IOException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.IsolatedStorage.IsolatedStorageException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.IO.PathTooLongException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.MemberAccessException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.MethodAccessException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.MissingFieldException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.MissingMemberException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.MissingMethodException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.MulticastNotSupportedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.CookieException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.HttpListenerException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.Mail.SmtpClient+CancellationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.Mail.SmtpException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.Mail.SmtpFailedRecipientException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.Mail.SmtpFailedRecipientsException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.NetworkInformation.NetworkInformationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.NetworkInformation.PingException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.ProtocolViolationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.Sockets.SocketException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.WebException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Net.WebSockets.WebSocketException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.NotFiniteNumberException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.NotImplementedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.NotSupportedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.NullReferenceException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.ObjectDisposedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.OperationCanceledException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.OutOfMemoryException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.OverflowException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.PlatformNotSupportedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.RankException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.AmbiguousMatchException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.CustomAttributeFormatException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.InvalidFilterCriteriaException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.ReflectionTypeLoadException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.TargetException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.TargetInvocationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Reflection.TargetParameterCountException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Resources.MissingManifestResourceException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Resources.MissingSatelliteAssemblyException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.CompilerServices.RuntimeWrappedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.COMException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.ExternalException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.InvalidComObjectException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.InvalidOleVariantTypeException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.MarshalDirectiveException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.SafeArrayRankMismatchException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.SafeArrayTypeMismatchException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.InteropServices.SEHException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.Remoting.RemotingException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.Remoting.RemotingTimeoutException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.Remoting.ServerException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Runtime.Serialization.SerializationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.AccessControl.PrivilegeNotHeldException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.Authentication.AuthenticationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.Authentication.InvalidCredentialException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.Cryptography.CryptographicException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.Cryptography.CryptographicUnexpectedOperationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.HostProtectionException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.Policy.PolicyException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.Principal.IdentityNotMappedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.SecurityException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.VerificationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Security.XmlSyntaxException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.StackOverflowException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.SystemException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Text.DecoderFallbackException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Text.EncoderFallbackException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Text.RegularExpressions.RegexMatchTimeoutException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.AbandonedMutexException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.BarrierPostPhaseException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.LockRecursionException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.SemaphoreFullException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.SynchronizationLockException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.Tasks.TaskCanceledException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.Tasks.TaskSchedulerException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.ThreadAbortException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.ThreadInterruptedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.ThreadStartException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.ThreadStateException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Threading.WaitHandleCannotBeOpenedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.TimeoutException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.TimeZoneNotFoundException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.TypeAccessException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.TypeInitializationException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.TypeLoadException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.TypeUnloadedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.UnauthorizedAccessException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.UriFormatException" includeSubclasses="True" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

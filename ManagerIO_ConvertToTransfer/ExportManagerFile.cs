@@ -1,6 +1,7 @@
 ﻿using System;
 using Manager;
 using Manager.Model;
+using Manager.Query;
 using System.Linq;
 using System.Reflection;
 
@@ -33,8 +34,8 @@ namespace ManagerIO_ConvertToTransfer
 				return ((ProfitAndLossStatementAccount)account).Name;
 			} else if (account.GetType () == typeof(BalanceSheetAccount)) {
 				return ((BalanceSheetAccount)account).Name;
-			} else if (account.GetType () == typeof(CashAccount)) {
-				return ((CashAccount)account).Name;
+			} else if (account.GetType () == typeof(CashAccount2)) {
+				return ((CashAccount2)account).Name;
 			}
 			return "Unknown";
 		}
@@ -59,13 +60,16 @@ namespace ManagerIO_ConvertToTransfer
 						string account="";
 						if (line.TaxCode != null) {
 							object taxCodeObj=managerFile.GetObject ((Guid)line.TaxCode);
+							/*
 							if (taxCodeObj.GetType () == typeof(InBuiltTaxCode)) {
 								TaxCodes.InBuiltTaxCode inBuiltTaxCode =
 									TaxCodes.MasterTaxCodes.FirstOrDefault (i=>i.Key==line.TaxCode);
 								if(inBuiltTaxCode!=null)
 									taxCode=inBuiltTaxCode.Code;
 								//taxCode = ((InBuiltTaxCode)taxCodeObj);
-							} else if (taxCodeObj.GetType () == typeof(TaxCode)) {
+							} else 
+							*/
+							if (taxCodeObj.GetType () == typeof(TaxCode)) {
 								taxCode = ((TaxCode)taxCodeObj).Name;
 							} else {
 								taxCode = line.TaxCode.ToString();
@@ -97,13 +101,16 @@ namespace ManagerIO_ConvertToTransfer
 						string account = "";
 						if (line.TaxCode != null) {
 							object taxCodeObj = managerFile.GetObject ((Guid)line.TaxCode);
+							/*
 							if (taxCodeObj.GetType () == typeof(InBuiltTaxCode)) {
 								TaxCodes.InBuiltTaxCode inBuiltTaxCode =
 									TaxCodes.MasterTaxCodes.FirstOrDefault (i => i.Key == line.TaxCode);
 								if (inBuiltTaxCode != null)
 									taxCode = inBuiltTaxCode.Code;
 								//taxCode = ((InBuiltTaxCode)taxCodeObj);
-							} else if (taxCodeObj.GetType () == typeof(TaxCode)) {
+							} else 
+							*/
+							if (taxCodeObj.GetType () == typeof(TaxCode)) {
 								taxCode = ((TaxCode)taxCodeObj).Name;
 							} else {
 								taxCode = line.TaxCode.ToString ();

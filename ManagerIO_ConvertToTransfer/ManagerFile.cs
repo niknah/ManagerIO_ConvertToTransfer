@@ -36,13 +36,13 @@ namespace ManagerIO_ConvertToTransfer
 				Payment payment=(Payment)o;
 				return string.Format ("{0:yyyy-MM-dd} {1:C} {3}\n{2}\n{4}", 
 					payment.Date, payment.Lines[0].Amount,payment.Description, 
-					((BankAccount)this.GetObject((Guid)payment.CreditAccount)).Name,payment.Key);
+					((CashAccount2)this.GetObject((Guid)payment.CreditAccount)).Name,payment.Key);
 			} else if (o.GetType () == typeof(Receipt)) {
 				Receipt receipt = (Receipt)o;
 				Guid account = (Guid) receipt.DebitAccount;
 				return string.Format ("{0:yyyy-MM-dd} {1:C} {3}\n{2}\n{4}", 
 					receipt.Date, receipt.Lines[0].Amount,receipt.Description, 
-					((BankAccount)this.GetObject(account)).Name,receipt.Key);
+					((CashAccount2)this.GetObject(account)).Name,receipt.Key);
 			}
 			return o.GetType ().Name;
 		}
@@ -51,10 +51,8 @@ namespace ManagerIO_ConvertToTransfer
 			if (id == null)
 				return "";
 			object o = GetObject ((Guid)id);
-			if(o.GetType()==typeof(CashAccount)) {
-				return ((CashAccount)o).Name;
-			} else if(o.GetType()==typeof(BankAccount)) {
-				return ((BankAccount)o).Name;
+			if(o.GetType()==typeof(CashAccount2)) {
+				return ((CashAccount2)o).Name;
 			}
 			return "";
 		}

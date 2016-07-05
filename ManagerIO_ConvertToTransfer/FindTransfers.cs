@@ -86,8 +86,8 @@ namespace ManagerIO_ConvertToTransfer
 					continue;
 
 				object creditAccountObj=objects [(Guid)payment.CreditAccount];
-				if(creditAccountObj.GetType() != typeof(BankAccount)) continue;
-				BankAccount creditAccount = ((BankAccount)creditAccountObj);
+				if(creditAccountObj.GetType() != typeof(CashAccount2)) continue;
+				CashAccount2 creditAccount = ((CashAccount2)creditAccountObj);
 
 				foreach (Receipt receipt in objects.Values.OfType<Receipt>()) {
 					if (receipt.DebitAccount == null)
@@ -104,8 +104,8 @@ namespace ManagerIO_ConvertToTransfer
 					if (receipt.DebitAccount == null)
 						continue;
 					object debitAccountObj = objects [(Guid)receipt.DebitAccount];
-					if(debitAccountObj.GetType() != typeof(BankAccount)) continue;
-					BankAccount debitAccount = ((BankAccount)debitAccountObj);
+					if(debitAccountObj.GetType() != typeof(CashAccount2)) continue;
+					CashAccount2 debitAccount = ((CashAccount2)debitAccountObj);
 
 					if (creditAccount.Currency == debitAccount.Currency) {
 						// single currency transfer
