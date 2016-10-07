@@ -98,7 +98,7 @@ namespace ManagerIO_ConvertToTransfer
 						continue;
 					if (!IsDateOk (payment.Date, receipt.Date))
 						continue;
-
+					if(receipt.Lines[0].Account!=null) continue;
 
 					decimal receiptAmount=receipt.Lines[0].Amount;
 					if (receipt.DebitAccount == null)
