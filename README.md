@@ -1,4 +1,12 @@
 
+
+## This doesn't work any more, unless you're using an old version of manager.io
+
+The latest is at...
+(https://github.com/niknah/ManagerIO_Sqlite)
+
+
+
 ## Tools for manager.io
 
 * Convert payments/receipts into transfers in manager.io
