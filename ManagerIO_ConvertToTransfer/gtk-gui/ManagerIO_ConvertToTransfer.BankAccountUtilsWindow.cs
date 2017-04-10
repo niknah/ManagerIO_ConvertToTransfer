@@ -5,8 +5,11 @@ namespace ManagerIO_ConvertToTransfer
 	public partial class BankAccountUtilsWindow
 	{
 		private global::Gtk.Table table1;
+		
 		private global::ManagerIO_ConvertToTransfer.BankAccountWidget bankAccountCombo;
+		
 		private global::Gtk.Button clearButton;
+		
 		private global::Gtk.Button exportButton;
 
 		protected virtual void Build ()

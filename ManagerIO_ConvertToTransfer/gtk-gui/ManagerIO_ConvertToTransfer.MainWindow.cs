@@ -5,9 +5,13 @@ namespace ManagerIO_ConvertToTransfer
 	public partial class MainWindow
 	{
 		private global::Gtk.VBox vbox3;
+		
 		private global::Gtk.Button convertTransfers;
+		
 		private global::Gtk.Button searchTransactions;
+		
 		private global::Gtk.Button clearReconciliation;
+		
 		private global::Gtk.Button okButton;
 
 		protected virtual void Build ()
